@@ -1,0 +1,31 @@
+To make video files all browsers like :
+------------------------------
+
+Go to https://www.ffmpeg.org/
+
+(my local copy is in downloads> tools> ffmpeg )
+
+In the extracted folder open a command prompt
+Run the bat file to set the path
+
+now use 
+>ffmpeg -i input.3pg output.mp4
+or
+>ffmpeg -i input.3pg output.ogg
+
+ogg is smaller than mp4 (both do audio too).
+
+Still need to find a way to shrink or compress the video.
+Maybe use matlab or maybe write appropriate equivalent functions in python.
+Also want to find a way to filter the audio to remove background noise.
+
+
+The video tag:
+
+ <video width="800" height="480" controls="controls">
+     <source src="image/small.mp4" type="video/mp4" />
+     <source src="image/small.ogg" type="video/ogg" />
+     Your browser does not support the video tag.
+</video>
+
+
